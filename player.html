@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ video[1] }}</title></head>
+<body>
+    <h2>{{ video[1] }}</h2>
+    <video width="640" height="360" controls>
+        <source src="{{ url_for('stream_video', filename=video[2]) }}" type="video/mp4">
+    </video>
+    <br><a href="/">Back to Library</a>
+</body>
+</html>

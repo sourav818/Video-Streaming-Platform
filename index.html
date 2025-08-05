@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Video Dashboard</title></head>
+<body>
+    <h2>Video Library</h2>
+    <a href="/upload">Upload New Video</a>
+    <ul>
+        {% for video in videos %}
+            <li>
+                <a href="/watch/{{ video[0] }}">{{ video[1] }}</a> 
+                ({{ video[3] }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
